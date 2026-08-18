@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JIREH Asesores de Seguros | Cobertura Total: Auto, Hogar, Vida y Viajes</title>
+  <meta name="description" content="Asesoría en seguros de auto, hogar, vida, gastos médicos mayores y viajes. Comparamos las mejores aseguradoras y te acompañamos en cada paso. Cotiza gratis con JIREH Asesores de Seguros.">
+  <meta name="keywords" content="seguros, seguro de auto, seguro de vida, seguro de hogar, gastos médicos mayores, seguro de viaje, asesor de seguros, JIREH Asesores de Seguros, cotizar seguro">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="JIREH Asesores de Seguros | Cobertura Total para tu Auto, Hogar, Vida y Viajes">
+  <meta property="og:description" content="Asesoría personalizada en seguros. Comparamos las mejores aseguradoras para darte la mejor cobertura al mejor precio.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/logo.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/favicon.png">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       LOADER
+  ══════════════════════════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-bulb">
+      <img src="img/logo-mark.png" alt="">
+    </div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    <span class="loader-text">Preparando tu cobertura...</span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-logo" aria-label="JIREH Asesores de Seguros — inicio">
+          <div class="nav-logo-icon" aria-hidden="true">
+            <img src="img/logo-mark.png" alt="">
+          </div>
+          <div class="nav-logo-copy">
+            <span>JIREH</span>
+            <span>Asesores de Seguros</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a href="#ambientes">Coberturas</a></li>
+            <li><a href="#why">Por qué JIREH</a></li>
+            <li><a href="#producto">Tu Asesor</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="#contacto" class="btn-gold nav-cta" style="font-size:13px; padding:12px 26px;">
+          Cotizar Ahora
+        </a>
+
+        <button class="hamburger" id="hamburger"
+                aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mob-menu" aria-label="Menú móvil">
+      <a href="#ambientes">Coberturas</a>
+      <a href="#why">Por qué JIREH</a>
+      <a href="#producto">Tu Asesor</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto">Cotizar Ahora →</a>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════ -->
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+
+      <!-- Parallax background image (fixed) -->
+      <div class="hero-bg" aria-hidden="true"></div>
+      <!-- Dark overlays -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <!-- Grid texture -->
+      <div class="hero-grid" aria-hidden="true"></div>
+      <!-- Canvas particle orbs -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Light shafts -->
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <!-- Film grain overlay -->
+      <div class="hero-grain" aria-hidden="true"></div>
+      <!-- One-shot scan reveal -->
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <!-- Trust badges row -->
+          <div class="hero-badges" aria-label="Compromisos JIREH">
+            <span><i class="fa-solid fa-handshake-angle"></i>Atención Cercana</span>
+            <span class="hb-sep" aria-hidden="true"></span>
+            <span><i class="fa-solid fa-building-columns"></i>Mejores Aseguradoras</span>
+            <span class="hb-sep" aria-hidden="true"></span>
+            <span><i class="fa-solid fa-sliders"></i>Planes Flexibles</span>
+          </div>
+
+          <!-- Animated title -->
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Protege lo que más</span></span>
+            <span class="line"><span>quieres, cuando</span></span>
+            <span class="line"><span class="accent">más lo necesitas.<i class="type-caret" aria-hidden="true"></i></span></span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-sub" id="hero-sub">
+            En JIREH comparamos entre las <strong>mejores aseguradoras del mercado</strong> para encontrar tu plan ideal. Asesoría transparente y cercana — antes, durante y después de contratar tu póliza.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="https://wa.me/529322068037?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20un%20seguro%20con%20JIREH." target="_blank" rel="noopener noreferrer" class="btn-gold">
+              <i class="fa-brands fa-whatsapp" style="font-size:15px;"></i>
+              Cotizar por WhatsApp
+            </a>
+            <p class="hero-ctas-note">
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+              Comparamos opciones entre varias aseguradoras y te asesoramos para elegir la solución adecuada.
+            </p>
+          </div>
+
+        </div><!-- /.hero-content -->
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MARQUEE
+    ══════════════════════════════════════════════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         COBERTURAS (banda blanca)
+    ══════════════════════════════════════════════════ -->
+    <section id="ambientes" aria-labelledby="amb-heading">
+      <div class="container">
+
+        <div class="ambientes-top">
+          <div class="label">Tu tranquilidad empieza aquí</div>
+          <h2 class="section-title" id="amb-heading">
+            Soluciones para proteger tu auto,<br>
+            tu hogar, tu salud y <span class="gold">tu futuro</span>
+          </h2>
+          <p>Te ayudamos a comparar opciones y elegir la cobertura ideal según tu momento de vida.</p>
+        </div>
+
+        <div class="ambientes-grid">
+
+          <!-- Auto -->
+          <div class="amb-card reveal">
+            <div class="amb-media">
+              <img class="amb-img"
+                src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=1400&auto=format&fit=crop"
+                alt="Auto circulando en carretera al atardecer, representando el seguro de auto JIREH">
+              <div class="amb-icon-wrap" aria-hidden="true"><i class="fa-solid fa-car"></i></div>
+            </div>
+            <div class="amb-body">
+              <h3>Seguro de Auto</h3>
+              <p>Cobertura amplia y asistencia vial. Circula tranquilo, pase lo que pase.</p>
+              <a href="#contacto" class="amb-link">Conocer más <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Vida -->
+          <div class="amb-card reveal d1">
+            <div class="amb-media">
+              <img class="amb-img"
+                src="https://images.unsplash.com/photo-1543342384-1f1350e27861?q=80&w=1400&auto=format&fit=crop"
+                alt="Padres sosteniendo a su bebé, representando el seguro de vida JIREH">
+              <div class="amb-icon-wrap" aria-hidden="true"><i class="fa-solid fa-heart-pulse"></i></div>
+            </div>
+            <div class="amb-body">
+              <h3>Seguro de Vida</h3>
+              <p>Asegura el futuro de quienes más amas ante cualquier eventualidad.</p>
+              <a href="#contacto" class="amb-link">Conocer más <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Gastos Médicos Mayores -->
+          <div class="amb-card reveal d2">
+            <div class="amb-media">
+              <img class="amb-img"
+                src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?q=80&w=1400&auto=format&fit=crop"
+                alt="Médico atendiendo a una paciente, representando gastos médicos mayores JIREH">
+              <div class="amb-icon-wrap" aria-hidden="true"><i class="fa-solid fa-stethoscope"></i></div>
+            </div>
+            <div class="amb-body">
+              <h3>Gastos Médicos Mayores</h3>
+              <p>Atención médica de calidad sin comprometer tus ahorros.</p>
+              <a href="#contacto" class="amb-link">Conocer más <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Viaje -->
+          <div class="amb-card reveal">
+            <div class="amb-media">
+              <img class="amb-img"
+                src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1400&auto=format&fit=crop"
+                alt="Ala de avión sobre las nubes, representando el seguro de viaje JIREH">
+              <div class="amb-icon-wrap" aria-hidden="true"><i class="fa-solid fa-plane"></i></div>
+            </div>
+            <div class="amb-body">
+              <h3>Seguro de Viaje</h3>
+              <p>Viaja protegido dentro y fuera de México, con asistencia total.</p>
+              <a href="#contacto" class="amb-link">Conocer más <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Hogar -->
+          <div class="amb-card reveal d1">
+            <div class="amb-media">
+              <img class="amb-img"
+                src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1400&auto=format&fit=crop"
+                alt="Fachada de una casa moderna, representando la protección de hogar JIREH">
+              <div class="amb-icon-wrap" aria-hidden="true"><i class="fa-solid fa-house-chimney"></i></div>
+            </div>
+            <div class="amb-body">
+              <h3>Protección de Hogar</h3>
+              <p>Tu patrimonio resguardado ante imprevistos y fenómenos naturales.</p>
+              <a href="#contacto" class="amb-link">Conocer más <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <!-- Personalizada -->
+          <div class="amb-card reveal d2">
+            <div class="amb-media">
+              <img class="amb-img"
+                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1400&auto=format&fit=crop"
+                alt="Apretón de manos sellando un acuerdo de confianza con JIREH">
+              <div class="amb-icon-wrap" aria-hidden="true"><i class="fa-solid fa-user-shield"></i></div>
+            </div>
+            <div class="amb-body">
+              <h3>Asesoría Personalizada</h3>
+              <p>¿No sabes cuál necesitas? Te ayudamos a armar tu cobertura ideal.</p>
+              <a href="#contacto" class="amb-link">Conocer más <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         POR QUÉ JIREH (banda con tinte)
+    ══════════════════════════════════════════════════ -->
+    <section id="why" aria-labelledby="why-heading">
+      <div class="container">
+
+        <div class="why-header reveal">
+          <div class="label">Por qué JIREH</div>
+          <h2 class="why-quote" id="why-heading">
+            No solo cotizamos. Te ayudamos a comparar,
+            <em>entender y elegir mejor</em>, con acompañamiento real.
+          </h2>
+          <p class="why-sub">
+            Combinamos asesoría experta con acceso a las mejores aseguradoras del país para ofrecerte protección real — no solo una póliza más.
+          </p>
+        </div>
+
+        <div class="features-grid reveal d1">
+
+          <div class="f-card">
+            <div class="f-icon" aria-hidden="true"><i class="fa-solid fa-shield-heart"></i></div>
+            <h3>Cobertura Total</h3>
+            <p>Auto, hogar, vida, gastos médicos mayores y viajes bajo un mismo respaldo.</p>
+          </div>
+
+          <div class="f-card">
+            <div class="f-icon" aria-hidden="true"><i class="fa-solid fa-building-columns"></i></div>
+            <h3>Mejores Aseguradoras</h3>
+            <p>Comparamos entre las aseguradoras líderes del mercado para encontrar el plan que te conviene.</p>
+          </div>
+
+          <div class="f-card">
+            <div class="f-icon" aria-hidden="true"><i class="fa-solid fa-sliders"></i></div>
+            <h3>Asesoría Personalizada</h3>
+            <p>Cada patrimonio es distinto. Diseñamos tu cobertura a la medida, sin letras chiquitas.</p>
+          </div>
+
+          <div class="f-card">
+            <div class="f-icon" aria-hidden="true"><i class="fa-solid fa-headset"></i></div>
+            <h3>Respaldo Continuo</h3>
+            <p>Te acompañamos antes, durante y después: renovaciones, siniestros y dudas resueltas.</p>
+          </div>
+
+        </div>
+
+        <div class="reveal d2" style="text-align:center;">
+          <a href="https://wa.me/529322068037?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20un%20seguro%20con%20JIREH." target="_blank" rel="noopener noreferrer" class="btn-gold">
+            Cotizar mi seguro
+            <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:12px;"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         TU ASESOR (tarjeta oscura flotante)
+    ══════════════════════════════════════════════════ -->
+    <section id="producto" aria-labelledby="prod-heading">
+      <div class="container">
+        <div class="advisor-panel reveal">
+
+          <!-- Info -->
+          <div>
+            <div class="label label-light">Asesoría Personal</div>
+            <h2 class="section-title on-dark" id="prod-heading">
+              JIREH está contigo,<br>
+              <span class="gold-light">cuando lo necesitas.</span>
+            </h2>
+            <p class="producto-lead">
+              Un asesor real que te escucha, entiende tu situación y te guía en la decisión correcta — no un formulario ni un call center.
+            </p>
+
+            <ul class="feature-rows" aria-label="Ventajas de la asesoría JIREH">
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></div>
+                <div>
+                  <h4>Comunicación Directa</h4>
+                  <p>Habla directo con tu asesor por WhatsApp, sin filtros ni esperas.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-scale-balanced"></i></div>
+                <div>
+                  <h4>Comparación Honesta</h4>
+                  <p>Te mostramos varias opciones y te decimos cuál conviene más para ti.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-hands-holding-child"></i></div>
+                <div>
+                  <h4>Acompañamiento en Siniestros</h4>
+                  <p>Si algo pasa, estamos contigo en el proceso de principio a fin.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-rotate"></i></div>
+                <div>
+                  <h4>Revisión Anual</h4>
+                  <p>Revisamos tu póliza cada año para que siempre tengas la cobertura justa.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div style="margin-top:34px;">
+              <a href="https://wa.me/529322068037?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20un%20seguro%20con%20JIREH." target="_blank" rel="noopener noreferrer" class="btn-white">
+                Cotizar mi seguro
+                <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:12px;"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Visual -->
+          <div>
+            <div class="panel-scene">
+              <div class="advisor-card">
+                <img src="img/advisor.jpg" alt="Asesor profesional de JIREH Asesores de Seguros">
+                <div class="advisor-info">
+                  <h4>JIREH Asesores de Seguros</h4>
+                  <span>Agente Profesional</span>
+                </div>
+              </div>
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Disponible por WhatsApp
+              </div>
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-shield-halved" style="color:var(--green-bright);"></i>
+                Cobertura Total
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PREGUNTAS FRECUENTES (banda oscura)
+    ══════════════════════════════════════════════════ -->
+    <section id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+
+        <div class="faq-hdr reveal">
+          <div class="label label-light">Preguntas Frecuentes</div>
+          <h2 class="section-title on-dark" id="faq-heading">
+            Todo lo que necesitas saber sobre JIREH
+          </h2>
+        </div>
+
+        <div class="faq-wrap reveal d1">
+          <div class="faq-list">
+
+            <div class="faq-item">
+              <div class="faq-q">
+                <span>¿Qué hace JIREH cuando tengo un accidente o emergencia?</span>
+                <span class="faq-toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+              </div>
+              <div class="faq-a">Te acompañamos en el proceso con tu aseguradora: te orientamos sobre los pasos a seguir y damos seguimiento hasta que tu caso se resuelva.</div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-q">
+                <span>¿Tengo un asesor de contacto directo?</span>
+                <span class="faq-toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+              </div>
+              <div class="faq-a">Sí. Hablas directo con tu asesor por WhatsApp o teléfono — sin menús automáticos ni call centers genéricos.</div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-q">
+                <span>¿Cuánto cuesta platicar con un asesor de JIREH?</span>
+                <span class="faq-toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+              </div>
+              <div class="faq-a">Nada. El diagnóstico inicial y la cotización son gratuitos y sin compromiso.</div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-q">
+                <span>¿JIREH me avisa cuándo vence mi póliza?</span>
+                <span class="faq-toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+              </div>
+              <div class="faq-a">Sí, damos seguimiento a tus renovaciones para que tu cobertura nunca se quede sin vigencia.</div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-q">
+                <span>¿Cómo elige JIREH entre tantas aseguradoras?</span>
+                <span class="faq-toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+              </div>
+              <div class="faq-a">Comparamos cobertura, costo y servicio entre distintas opciones del mercado para recomendarte la que mejor se ajusta a tu caso — no la que más nos convenga a nosotros.</div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-q">
+                <span>¿Cómo empiezo a cotizar con JIREH?</span>
+                <span class="faq-toggle" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+              </div>
+              <div class="faq-a">Escríbenos por WhatsApp o llena el formulario de contacto. En minutos un asesor se pone en contacto contigo.</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PROCESO (banda blanca)
+    ══════════════════════════════════════════════════ -->
+    <section id="proceso" aria-labelledby="proceso-heading">
+      <div class="container">
+
+        <div class="proceso-header reveal">
+          <div class="label">Cómo trabajamos</div>
+          <h2 class="section-title" id="proceso-heading">
+            Simple, claro y <span class="gold">sin letras chiquitas</span>
+          </h2>
+          <p>De la primera llamada a tu póliza activa, te acompañamos en cada paso del proceso.</p>
+        </div>
+
+        <div class="proceso-grid">
+
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Diagnóstico Gratuito</h3>
+            <p>Platicamos sobre lo que quieres proteger — tu auto, tu casa, tu familia o tus viajes. Sin costo, sin compromiso.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Comparamos por Ti</h3>
+            <p>Buscamos entre las mejores aseguradoras del mercado la opción con mejor cobertura al mejor precio.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Cotización Clara</h3>
+            <p>Recibes una propuesta transparente, sin sorpresas ni condiciones ocultas.</p>
+          </div>
+
+          <div class="proceso-step reveal d3">
+            <div class="step-number">Paso 04</div>
+            <h3>Acompañamiento Real</h3>
+            <p>Seguimos contigo: renovaciones, dudas y trámites de siniestro con atención humana.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SECTORES (banda con tinte)
+    ══════════════════════════════════════════════════ -->
+    <section id="sectores" aria-labelledby="sec-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">¿A quién protegemos?</div>
+          <h2 class="section-title" id="sec-heading">
+            Protección para <span class="gold">cada momento de tu vida</span>
+          </h2>
+          <p>Sin importar en qué etapa estés, hay una cobertura JIREH pensada para ti.</p>
+        </div>
+
+        <div class="sectores-grid" role="list">
+          <div class="sector-card reveal" role="listitem">
+            <i class="fa-solid fa-people-roof sector-icon" aria-hidden="true"></i>
+            <h3>Familias</h3>
+          </div>
+          <div class="sector-card reveal d1" role="listitem">
+            <i class="fa-solid fa-car sector-icon" aria-hidden="true"></i>
+            <h3>Conductores</h3>
+          </div>
+          <div class="sector-card reveal d2" role="listitem">
+            <i class="fa-solid fa-house-chimney sector-icon" aria-hidden="true"></i>
+            <h3>Propietarios</h3>
+          </div>
+          <div class="sector-card reveal d3" role="listitem">
+            <i class="fa-solid fa-plane sector-icon" aria-hidden="true"></i>
+            <h3>Viajeros</h3>
+          </div>
+          <div class="sector-card reveal d4" role="listitem">
+            <i class="fa-solid fa-briefcase sector-icon" aria-hidden="true"></i>
+            <h3>Profesionales</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CONTACTO (banda oscura)
+    ══════════════════════════════════════════════════ -->
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact-hdr reveal">
+          <div class="label label-light">Contacto</div>
+          <h2 class="section-title on-dark" id="contact-heading">
+            Hablemos de <span class="gold-light">tu tranquilidad</span>
+          </h2>
+          <p>Cotiza gratis. Te respondemos directo, sin bots ni esperas.</p>
+        </div>
+
+        <div class="contact-box reveal">
+
+          <!-- Info panel -->
+          <div class="contact-info">
+            <h3>Atención Personalizada</h3>
+            <p class="ci-sub">¿Listo para proteger lo que más importa? Estamos a un mensaje de distancia.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Teléfono</h4>
+                  <p>
+                    <a href="tel:9322068037">932 206 8037</a>
+                  </p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Correo</h4>
+                  <p>
+                    <a href="mailto:jireh.asesores.contacto@gmail.com">jireh.asesores.contacto@gmail.com</a>
+                  </p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p>Escríbenos y cotizamos en minutos.</p>
+                  <a href="https://wa.me/529322068037?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20un%20seguro%20con%20JIREH." target="_blank"
+                     rel="noopener noreferrer" class="ci-wa-link">
+                    Abrir chat →
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div><!-- /.contact-info -->
+
+          <!-- Form -->
+          <div class="contact-form-wrap">
+            <h3>Solicitar Cotización</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control"
+                         placeholder="Ej. Nombre Apellido" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">¿Qué seguro te interesa?</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Cobertura Integral</option>
+                    <option>Seguro de Auto</option>
+                    <option>Seguro de Vida</option>
+                    <option>Gastos Médicos Mayores</option>
+                    <option>Seguro de Viaje</option>
+                    <option>Protección de Hogar</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Cuéntanos qué necesitas proteger</label>
+                <textarea id="f-msg" class="form-control" rows="4" required
+                          placeholder="Describe tu situación o cualquier detalle relevante…"></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp"></i>
+                Cotizar por WhatsApp
+              </button>
+              <p class="form-note">
+                Al enviar serás redirigido a WhatsApp para continuar la conversación con tu asesor.
+              </p>
+            </form>
+          </div>
+
+        </div><!-- /.contact-box -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+
+      <!-- CTA band -->
+      <div class="footer-cta">
+        <div>
+          <h2>Tu aliado de confianza en <span>seguros y protección.</span></h2>
+          <p>Asesoría cercana y transparente, hoy y en cada renovación.</p>
+        </div>
+        <div class="footer-cta-actions">
+          <a href="https://wa.me/529322068037?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20un%20seguro%20con%20JIREH." target="_blank" rel="noopener noreferrer" class="btn-white">
+            Agendar asesoría sin costo
+            <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+          </a>
+          <div class="footer-social-row">
+            <span>Síguenos</span>
+            <a href="mailto:jireh.asesores.contacto@gmail.com" class="footer-soc" aria-label="Correo">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/529322068037" target="_blank" rel="noopener noreferrer" class="footer-soc" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columns -->
+      <div class="footer-cols">
+        <div class="footer-col">
+          <div class="footer-col-title">Coberturas</div>
+          <ul>
+            <li><a href="#ambientes">Seguro de Auto</a></li>
+            <li><a href="#ambientes">Seguro de Vida</a></li>
+            <li><a href="#ambientes">Gastos Médicos Mayores</a></li>
+            <li><a href="#ambientes">Seguro de Viaje</a></li>
+            <li><a href="#ambientes">Protección de Hogar</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Cotiza Rápido</div>
+          <ul>
+            <li><a href="https://wa.me/529322068037?text=Hola%2C%20quiero%20cotizar%20un%20seguro%20de%20auto." target="_blank" rel="noopener noreferrer">Cotizar Auto</a></li>
+            <li><a href="https://wa.me/529322068037?text=Hola%2C%20quiero%20cotizar%20gastos%20m%C3%A9dicos%20mayores." target="_blank" rel="noopener noreferrer">Cotizar Gastos Médicos</a></li>
+            <li><a href="https://wa.me/529322068037?text=Hola%2C%20quiero%20cotizar%20un%20seguro%20de%20hogar." target="_blank" rel="noopener noreferrer">Cotizar Hogar</a></li>
+            <li><a href="https://wa.me/529322068037?text=Hola%2C%20quiero%20cotizar%20un%20seguro%20de%20viaje." target="_blank" rel="noopener noreferrer">Cotizar Viaje</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Empresa</div>
+          <ul>
+            <li><a href="#why">Por qué JIREH</a></li>
+            <li><a href="#producto">Tu Asesor</a></li>
+            <li><a href="#proceso">Cómo trabajamos</a></li>
+            <li><a href="#faq">Preguntas frecuentes</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Contacto</div>
+          <ul>
+            <li><a href="tel:9322068037">932 206 8037</a></li>
+            <li><a href="mailto:jireh.asesores.contacto@gmail.com">jireh.asesores.contacto@gmail.com</a></li>
+            <li><a href="https://wa.me/529322068037" target="_blank" rel="noopener noreferrer">WhatsApp directo</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <div class="footer-inner">
+          <div class="footer-logo">
+            <img src="img/logo-mark.png" alt="">
+            <span>JIREH Asesores de Seguros</span>
+          </div>
+          <p class="footer-copy">
+            &copy; <span id="year"></span> JIREH Asesores de Seguros. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════
+       FLOATING WHATSAPP
+  ══════════════════════════════════════════════════════ -->
+  <a href="https://wa.me/529322068037?text=Hola%2C%20visit%C3%A9%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20cotizar%20un%20seguro."
+     target="_blank" rel="noopener noreferrer"
+     class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
