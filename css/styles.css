@@ -596,6 +596,24 @@ section{ position:relative; padding:120px 0; }
 @media (max-width:600px){ .pb-br{ right:8px; bottom:-10px; } }
 
 /* ══════════════════════════════════════════════════════════════
+   ASEGURADORAS (banda blanca)
+   ══════════════════════════════════════════════════════════════ */
+#aseguradoras{ background:var(--bg); }
+.aseguradoras-hdr{ text-align:center; max-width:600px; margin:0 auto 56px; }
+.aseguradoras-hdr p{ margin-top:14px; font-size:15px; color:var(--body); }
+.aseguradoras-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+@media (max-width:920px){ .aseguradoras-grid{ grid-template-columns:repeat(3,1fr); } }
+@media (max-width:560px){ .aseguradoras-grid{ grid-template-columns:repeat(2,1fr); } }
+.aseg-card{
+  text-align:center; padding:34px 16px; border-radius:var(--radius);
+  background:var(--white); border:1px solid var(--card-line); box-shadow:var(--card-shadow);
+  transition:transform .35s var(--ease), box-shadow .35s;
+}
+.aseg-card:hover{ transform:translateY(-5px); box-shadow:0 20px 40px -16px rgba(11,37,69,0.25); }
+.aseg-icon{ font-size:26px; color:var(--green); margin-bottom:16px; }
+.aseg-card h3{ font-size:14px; font-weight:600; color:var(--ink); line-height:1.4; }
+
+/* ══════════════════════════════════════════════════════════════
    PREGUNTAS FRECUENTES (banda oscura)
    ══════════════════════════════════════════════════════════════ */
 #faq{ background:var(--navy-black); }
